@@ -11,6 +11,7 @@
     [EmailAddress] NVARCHAR (50)     NULL,
     [Phone]        [dbo].[Phone]     NULL,
     [Language Code] NVARCHAR(10)     NULL,
+    [Shipping Method Code] NVARCHAR(10)     NULL,
     [PasswordHash] VARCHAR (128)     NOT NULL,
     [PasswordSalt] VARCHAR (10)      NOT NULL,
     [rowguid]      UNIQUEIDENTIFIER  CONSTRAINT [DF_Customer_rowguid] DEFAULT (newid()) ROWGUIDCOL NOT NULL,
